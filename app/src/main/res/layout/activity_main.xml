@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+    <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+        <TextView
+                android:id="@+id/tvHello"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="RxBluetooth"/>
+
+        <Button
+
+                android:textAllCaps="false"
+                android:layout_width="match_parent"
+                android:id="@+id/scanObservable"
+                android:background="@color/colorAccent"
+                android:text="扫描"
+                android:layout_height="wrap_content"/>
+
+        <Button
+                android:layout_marginTop="20dp"
+                android:textAllCaps="false"
+                android:layout_width="match_parent"
+                android:id="@+id/stopScan"
+                android:background="@color/colorAccent"
+                android:text="停止扫描"
+                android:layout_height="wrap_content"/>
+
+        <Button
+                android:layout_marginTop="20dp"
+                android:textAllCaps="false"
+                android:layout_width="match_parent"
+                android:id="@+id/connect"
+                android:background="@color/colorAccent"
+                android:text="连接"
+                android:layout_height="wrap_content"/>
+
+        <Button
+                android:layout_marginTop="20dp"
+                android:textAllCaps="false"
+                android:layout_width="match_parent"
+                android:id="@+id/disconnected"
+                android:background="@color/colorAccent"
+                android:text="断开连接"
+                android:layout_height="wrap_content"/>
+        <Button
+                android:layout_marginTop="20dp"
+                android:textAllCaps="false"
+                android:layout_width="match_parent"
+                android:id="@+id/newConnect"
+                android:background="@color/colorAccent"
+                android:text="1号测试"
+                android:layout_height="wrap_content"/>
+
+        <Button
+                android:layout_marginTop="20dp"
+                android:textAllCaps="false"
+                android:layout_width="match_parent"
+                android:id="@+id/newConnect1"
+                android:background="@color/colorAccent"
+                android:text="2号测试"
+                android:layout_height="wrap_content"/>
+
+        <Button
+                android:layout_marginTop="20dp"
+                android:textAllCaps="false"
+                android:layout_width="match_parent"
+                android:id="@+id/send"
+                android:background="@color/colorAccent"
+                android:text="send单包指令"
+                android:layout_height="wrap_content"/>
+
+        <Button
+                android:layout_marginTop="20dp"
+                android:textAllCaps="false"
+                android:layout_width="match_parent"
+                android:id="@+id/ceshi1"
+                android:background="@color/colorAccent"
+                android:text="测试临时使用"
+                android:layout_height="wrap_content"/>
+
+        <Button
+                android:layout_marginTop="20dp"
+                android:textAllCaps="false"
+                android:layout_width="match_parent"
+                android:id="@+id/more"
+                android:background="@color/colorAccent"
+                android:text="send多包指令"
+                android:layout_height="wrap_content"/>
+
+        <Button
+                android:layout_marginTop="20dp"
+                android:textAllCaps="false"
+                android:layout_width="match_parent"
+                android:id="@+id/moreCallback"
+                android:background="@color/colorAccent"
+                android:text="send多包指令有回调"
+                android:layout_height="wrap_content"/>
+        <Button
+                android:layout_marginTop="20dp"
+                android:textAllCaps="false"
+                android:layout_width="match_parent"
+                android:id="@+id/device"
+                android:background="@color/colorAccent"
+                android:text="获取gatt对应的远程设备"
+                android:layout_height="wrap_content"/>
+    </LinearLayout>
+</ScrollView>
