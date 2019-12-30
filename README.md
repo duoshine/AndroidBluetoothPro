@@ -6,8 +6,19 @@
 详细使用请移步:   
 [csdn](https://blog.csdn.net/duo_shine/article/details/89672883)      
 #### 依赖
+将jitpack添加到项目的build.gradle中
 
-	implementation 'duoshine.rxjava2:rxandroidbluetooth:1.4'
+	allprojects {
+	repositories {
+		...
+		maven { url 'https://www.jitpack.io' }
+	}
+	}	
+	
+将库的依赖添加到module的build.gradle中
+	
+	implementation 'com.github.duoshine:AndroidBluetoothPro:1.8'
+
 	
 #### 初始化
 
@@ -95,4 +106,6 @@ ps:每次连接任务之前最好都需要.dispose(),否则你将开启两个连
 	duoshine.rxandroidbluetooth.exception
 
 1.6：在发送多包指令时，框架希望在doOnNext中检查中间的包，当最后一包结束时我们可能希望让onNext处理，这些都可以通过BluetoothNextProfile中的变量在doOnNext中控制
+
+1.8：从bintray到jitpack
 
